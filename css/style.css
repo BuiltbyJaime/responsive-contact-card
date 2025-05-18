@@ -1,14 +1,52 @@
 @import 'reset.css';
-
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .container {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr;
+    display: flex;
+    flex-direction: column;
+    border:5px solid rgb(147, 100, 5);
+    background-color: rgb(114, 241, 50);
+    overflow: hidden;
+    text-align: center;
+}
 
+@media screen and (min-width:500px) {
+    
+    
+    .container {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height:90vh;
+
+    }
+
+    .image {
+
+     grid-column: 1 / -1;   
+     justify-items: center;
+
+
+
+    }
+
+
+    .leftsidetext{
+        grid-row:2;
+        grid-column:1;
+        justify-items: start;
+        align-content: center;
+    }
+    .rightsidetext {
+        grid-row:2;
+        grid-column: 2;
+        justify-items: end;
+        align-content: center;
+    }
 
 }
-.container2 {
 
-grid
-
-}
