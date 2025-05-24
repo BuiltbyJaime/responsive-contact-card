@@ -1,4 +1,4 @@
-@import 'reset.css';
+@import '/css/reset.css';
 @font-face {
   font-family: 'Shrek';
   src: url('../fonts/shrek.ttf') format('truetype');
@@ -7,13 +7,11 @@
   font-display: swap;
 }
 
-
-
 body {
     display: flex;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 .container {
     display: flex;
@@ -22,26 +20,23 @@ body {
     background-color: rgb(114, 241, 50);
     overflow: hidden;
     text-align: center;
+    flex-wrap:wrap;
+}
+.image {
+    align-self: center; 
 }
 
 .name {
-font-size: 3rem;
+font-size: 4rem;
 font-family: 'Shrek';
 }
 
-.title {
-
-}
-
-.Cname {
-
-
-
-}
 
 @media screen and (min-width:500px) {
     
-    
+    .image {
+    justify-self: center;
+    }
     .container {
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -52,7 +47,6 @@ font-family: 'Shrek';
 
     .image {
      grid-column: 1 / -1;   
-     justify-items: center;
     }
 
     .leftsidetext {
@@ -70,12 +64,7 @@ font-family: 'Shrek';
 
 }
 
-
-
 @media (min-width:768px ) {
-    
-    
-   
 
     .image { 
         grid-column: 1;
